@@ -1,11 +1,12 @@
-const botaoMostraPalavras = document.queryselector("#botao-palavrachave");
 
-botaoMostraPalavras.addEvenList("click", mostraPalavrasChave);
+const botaoMostraPalavras = document.querySelector("#botao-palavrachave");
 
-function mostraPalavrasChave(){
-    const texto = document.queryselector("#entrada-de-texto").value;
-    const campoResultado = document.queryselector("#resultado-palavrachave");
-    const palavras = texto.split(" ")
+botaoMostraPalavras.addEventListener("click", mostraPalavrasChave);
 
-    campoResultado.textContent = palavras.join(", ")
+function mostraPalavrasChave() {
+    const texto = document.querySelector("#entrada-de-texto").value;
+    const campoResultado = document.querySelector("#resultado-palavrachave");
+    const palavras = texto.split(" ");
+
+    campoResultado.textContent = palavras.join(", ");
 }
