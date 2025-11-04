@@ -53,5 +53,5 @@ function tiraPalavrasRuins(palavras){
 
         }
     }
-    return palavrasBoas
+    return frequencias
 }
